@@ -164,15 +164,26 @@ var memory = 0;
 							  
 					}				
 				
-				break;		
+				break;
+			case"√":
+			if (parseInt(mass_inp[1].value)>0) {
+			mass_inp[1].value = Math.sqrt(parseInt(mass_inp[1].value));	
+			}
+			break;
+			case"1/x":
+			if (parseInt(mass_inp[1].value)!=0) {
+			mass_inp[1].value = 1/(parseInt(mass_inp[1].value));	
+			}
+			break;	
+			case"+-":
+			  mass_inp[1].value = -1*parseInt(mass_inp[1].value);
+
+			
+			break;
 
 
 
-			default:
-                     console.log(obj.value);
-					 break;
-             }
-		
+		}
 
 	}
 
